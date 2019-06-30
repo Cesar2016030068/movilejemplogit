@@ -4,14 +4,27 @@ public class Operaciones {
     private  float num1;
     private  float num2;
 
-    public Operaciones(){ this.setNum1(0); this.setNum2(0);}
+    public Operaciones(){
+        this.setNum1(0);
+        this.setNum2(0);
+    }
+
     public Operaciones(float num1, float num2){
         this.setNum1(num1);
-        this.setNum2(num2);}
-    public  float suma(){return  this.getNum1() + this.getNum2();}
-    public  float  resta(){return  this.getNum1() - this.getNum2();}
-    public  float mult(){return  this.getNum1() * this.getNum2();}
-    public  float div(){return  this.getNum1() / this.getNum2();}
+        this.setNum2(num2);
+    }
+    public  float suma(){
+        return  this.getNum1() + this.getNum2();
+    }
+    public  float  resta(){
+        return  this.getNum1() - this.getNum2();
+    }
+    public  float mult(){
+        return  this.getNum1() * this.getNum2();
+    }
+    public  float div(){
+        return  this.getNum1() / this.getNum2();
+    }
 
 
     public float getNum1() {
