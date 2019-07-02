@@ -7,11 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText txtNum1;
     EditText txtNum2;
     EditText Res;
+
+    float res;
 
     Button btnSuma;
     Button btnResta;
@@ -39,9 +41,37 @@ public class MainActivity extends AppCompatActivity {
         Cerrar = (Button) findViewById(R.id.btnCerrar);
 
 
+        btnSuma.setOnClickListener(this);
+        btnResta.setOnClickListener(this);
+        btnDivi.setOnClickListener(this);
+        btnMult.setOnClickListener(this);
+        Limpiar.setOnClickListener(this);
+        Cerrar.setOnClickListener(this);
 
 
     }
 
 
+    @Override
+    public void onClick(View v) {
+        Operaciones obj = new Operaciones();
+
+
+        if (btnSuma == v){
+
+
+
+        }else if (btnResta == v){
+
+        }else if (btnMult == v){
+
+        }else if (btnDivi == v){
+
+        }else if (Limpiar == v){
+
+        }else if (Cerrar == v){
+
+        }
+
+    }
 }
